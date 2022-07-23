@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Public Library</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+QLD+Beginner:wght@600&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+        }
+
+
+    
+        h2,
+        h4 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 900;
+        }
+
+        h2 {
+            font-family: 'Edu QLD Beginner', cursive;
+            font-size: 35px;
+            line-height: 2px;
+        }
+
+        h4 {
+            font-weight: 500;
+        }
+
+        .navbar {
+            margin: 0;
+            padding-left: 4%;
+            display: flex;
+            flex-direction: row;
+            gap: 40%;
+            color: white;
+        }
+
+        .navbar div {
+            margin-top: 2%;
+        }
+
+        .navbar div a {
+            text-decoration: none;
+            font-size: 22px;
+            font-weight: 600;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-variant-caps: all-petite-caps;
+            color: white;
+        }
+
+        .navlinks {
+            display: flex;
+            flex-direction: row;
+            margin-top: 2.5%;
+            gap: 60%;
+        }
+
+        table{
+            width: 100%;
+            height: 80%;
+            font-size: 20px;
+            font-family: 'Inter', sans-serif;
+            font-weight: 100;
+            color: white;
+        }
+
+        th,td,tr{
+
+        }
+
+        .container1 {
+            background-color: #1ea873;
+            height: 300px;
+        }
+
+        .heading {
+            text-align: center;
+            font-size: 30px;
+            font-family: 'Inter', sans-serif;
+            font-weight: 100;
+            color: aliceblue;
+            margin-top: -4%;
+        }
+        .container2 {
+            display: flex;
+            flex-direction: row;
+            background-color: #222423;
+            height: 450px;
+            width: 80%;
+            margin-left: 10%;
+            margin-top: -4%;
+            padding: 2%;
+        }
+        .control{
+            width: 50%;
+            margin-top: 3%;
+        }
+        .songlist{
+            padding: 2%;
+            font-size: 15px;
+            font-family: 'Inter', sans-serif;
+            font-weight: 500;
+            width: 50%;
+        }
+        .control{
+            display: flex;
+            flex-direction: row;
+            padding: 2%;
+            gap: 5%;
+            font-size: 20px;
+            font-family: 'Inter', sans-serif;
+            font-weight: 700;
+            color: white;
+        }
+        .div1{
+            width: 50%;
+        }
+        .div2{
+            width: 50%;
+            color: white;
+        }
+        button{
+            margin-left: 5%;
+            border: none;
+            border-radius: 5px;
+            padding: 5%;
+            width: 40%;
+            background-color: #1ea873;
+            color: white;
+            font-weight: 700;
+            font-size: 17px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container1">
+        <div class="navbar">
+            <div>
+                <h2>Music Player</h2>
+                <h4>Play music of your choice</h4>
+            </div>
+            <div class="navlinks">
+                <a href="#">Home</a>
+                <a href="#">Albums</a>
+                <a href="#">Gallery</a>
+            </div>
+        </div>
+        <div class="heading">
+            <h1>Night Mix</h1>
+        </div>
+    </div>
+    <div class="container2">
+        <div class="control">
+            <div class="div1">
+                    <img src="thumb.jpg" width="100%">
+            </div>
+            <div class="div2">
+                Artist: Arijit Singh <br> <br>
+                Composer: Pritam <br><br>
+                Genre: Classical <br><br>
+            </div>
+        </div>
+        <div class="songlist">
+            <table>
+                <tr>
+                    <td><h3>Keshariya</h3></td>
+                    <td><button id="play1">Play</button><button id="pause1">Pause</button></td>
+                </tr>
+                <tr>
+                    <td><h3>Fitoor</h3></td>
+                    <td><button id="play2">Play</button><button id="pause2">Pause</button></td>
+                </tr>
+                <tr>
+                    <td><h3>Nakhre</h3></td>
+                    <td><button id="play1">Play</button><button id="pause1">Pause</button></td>
+                </tr>
+                <tr>
+                    <td><h3>Oh my Lord</h3></td>
+                    <td><button id="play2">Play</button><button id="pause2">Pause</button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <br><br>
+    <!-- <table>
+        <tr>
+            <th>Song</th>
+            <th colspan="2">Controls</th>
+        </tr>
+        <tr>
+            <td>
+                Song 1
+            </td>
+            <td>
+                <button id="play1">Play</button>
+            </td>
+            <td>
+                <button id="pause1">Pause</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Song 2
+            </td>
+            <td>
+                <button id="play2">Play</button>
+            </td>
+            <td>
+                <button id="pause2">Pause</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Song 3
+            </td>
+            <td>
+                <button id="play3">Play</button>
+            </td>
+            <td>
+                <button id="pause3">Pause</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Song 4
+            </td>
+            <td>
+                <button id="play4">Play</button>
+            </td>
+            <td>
+                <button id="pause4">Pause</button>
+            </td>
+        </tr>
+    </table> -->
+</body>
+<script>
+    let x = new Audio("1.mp3");
+    document.querySelector("#play1").addEventListener("click", musicPlay1);
+    document.querySelector("#pause1").addEventListener("click", musicPause1);
+    function musicPlay1() {
+        x.play();
+    }
+    function musicPause1() {
+        x.pause();
+    }
+
+    let y = new Audio("2.mp3");
+    document.querySelector("#play2").addEventListener("click", musicPlay2);
+    document.querySelector("#pause2").addEventListener("click", musicPause2);
+    function musicPlay2() {
+        y.play();
+    }
+    function musicPause2() {
+        y.pause();
+    }
+
+    let z = new Audio("2.mp3");
+    document.querySelector("#play3").addEventListener("click", musicPlay3);
+    document.querySelector("#pause3").addEventListener("click", musicPause3);
+    function musicPlay3() {
+        z.play();
+    }
+    function musicPause3() {
+        z.pause();
+    }
+
+    let a = new Audio("2.mp3");
+    document.querySelector("#play4").addEventListener("click", musicPlay4);
+    document.querySelector("#pause4").addEventListener("click", musicPause4);
+    function musicPlay4() {
+        a.play();
+    }
+    function musicPause4() {
+        a.pause();
+    }
+</script>
+
+</html>
